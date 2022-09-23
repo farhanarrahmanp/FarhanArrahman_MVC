@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Pegawai>
+
+@{
+    ViewData["Title"] = "Detail Pegawai";
+}
+
+<h1>Detail Pegawai</h1>
+
+<p>
+    <a asp-action="Pegawai"><= Kembali</a>
+</p>
+<table class="table">
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nama)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nama)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TmptLahir)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TmptLahir)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TglLahir)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.TglLahir)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Agama)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Agama)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Alamat)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alamat)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NoHp)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoHp)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foto)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PosisiNama)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.PosisiNama)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KantorAlamat)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.KantorAlamat)
+            </td>
+        </tr>
+    }
+</table>

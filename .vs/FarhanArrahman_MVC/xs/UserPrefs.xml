@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{CB0EF6ED-3E89-41EC-AB1A-839033B9C690}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FarhanArrahman_MVC/Views/Home/Create.cshtml">
+    <Files>
+      <File FileName="FarhanArrahman_MVC/Controllers/HomeController.cs" Line="188" Column="150" />
+      <File FileName="FarhanArrahman_MVC/Views/Home/Index.cshtml" Line="9" Column="1" />
+      <File FileName="FarhanArrahman_MVC/Startup.cs" Line="56" Column="9" />
+      <File FileName="FarhanArrahman_MVC/Views/Shared/_Layout.cshtml" Line="29" Column="30" />
+      <File FileName="FarhanArrahman_MVC/Models/Pegawai.cs" Line="11" Column="42" />
+      <File FileName="FarhanArrahman_MVC/Views/Home/Pegawai.cshtml" Line="57" Column="37" />
+      <File FileName="FarhanArrahman_MVC/Views/Home/Create.cshtml" Line="4" Column="32" />
+      <File FileName="FarhanArrahman_MVC/Views/Home/Update.cshtml" Line="129" Column="38" />
+      <File FileName="FarhanArrahman_MVC/Views/Home/Details.cshtml" Line="18" Column="39" />
+      <File FileName="FarhanArrahman_MVC/Views/Home/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="FarhanArrahman_MVC/Views/Home/Privacy.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FarhanArrahman_MVC" expanded="True">
+            <Node name="FarhanArrahman_MVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Create.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FarhanArrahman__MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

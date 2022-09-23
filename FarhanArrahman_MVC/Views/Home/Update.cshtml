@@ -1,0 +1,130 @@
+﻿@model IEnumerable<Pegawai>
+
+@{
+    ViewData["Title"] = "Ubah Pegawai";
+}
+
+<h1>Ubah Pegawai</h1>
+
+<p>
+    <a asp-action="Pegawai"><= Kembali</a>
+</p>
+<table class="table">
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <td>
+                <input type="text" id="id" name="id" value=@Html.DisplayFor(modelItem => item.Id) disabled>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nama)
+            </th>
+            <td>
+                <input type="text" id="nama" name="nama" value=@Html.DisplayFor(modelItem => item.Nama)>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Tempat Lahir
+            </th>
+            <td>
+                <input type="text" id="tmptlahir" name="tmptlahir" value=@Html.DisplayFor(modelItem => item.TmptLahir)>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Tanggal Lahir
+            </th>
+            <td>
+                <input type="date" id="tgllahir" name="tgllahir" value=@Html.DisplayFor(modelItem => item.TglLahir)>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <td>
+                <label for="radiol">Laki-Laki</label>
+                <input type="radio" id="radiol" name="radiol" value=@Html.DisplayFor(modelItem => item.Gender)>
+            </td>
+            <td>
+                <label for="radiop">Perempuan</label>
+                <input type="radio" id="radiop" name="radiop" value=@Html.DisplayFor(modelItem => item.Gender)>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Agama)
+            </th>
+            <td>
+                <select name="agama" id="agama">
+                    <option value=@Html.DisplayFor(modelItem => item.Agama) selected>@Html.DisplayFor(modelItem => item.Agama)</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Alamat)
+            </th>
+            <td>
+                <textarea id="alamat" name="alamat">@Html.DisplayFor(modelItem => item.Alamat)</textarea>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <td>
+                <input type="text" id="email" name="email" value=@Html.DisplayFor(modelItem => item.Email) disabled>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Nomor Handphone
+            </th>
+            <td>
+                <input type="text" id="nohp" name="nohp" value=@Html.DisplayFor(modelItem => item.NoHp) disabled>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
+            <td>
+                <input type="text" id="foto" name="foto" value=@Html.DisplayFor(modelItem => item.Foto)>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Posisi
+            </th>
+            <td>
+                <input type="text" id="posisinaman" name="posisinama" value=@Html.DisplayFor(modelItem => item.PosisiNama) disabled>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Kantor
+            </th>
+            <td>
+                <input type="text" id="kantoralamat" name="kantoralamat" value=@Html.DisplayFor(modelItem => item.KantorAlamat) disabled>
+            </td>
+        </tr>
+    }
+</table>
+
+<p>
+    <a asp-action="Update">Simpan</a>
+</p>
